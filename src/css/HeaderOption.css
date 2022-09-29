@@ -1,0 +1,36 @@
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+  width: 65px;
+  padding-bottom: 10px;
+}
+
+.active {
+  color: black;
+  box-shadow: inset 0px -2px 0px 0px;
+}
+
+.headerOption:hover {
+  color: black;
+}
+
+.headerOption-title {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.headerOption-icon {
+  object-fit: contain;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .headerOption {
+    width: 40px;
+  }
+}

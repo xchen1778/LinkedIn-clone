@@ -1,0 +1,79 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: scale(1);
+  }
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+}
+
+.post-header {
+  display: grid;
+  grid-template-columns: 45px 1fr 0.1fr;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.post-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-info > h2 {
+  font-size: 15px;
+  cursor: pointer;
+  display: inline;
+}
+
+.post-info > p {
+  font-size: 12px;
+  color: gray;
+  cursor: pointer;
+  display: inline;
+}
+
+.post-menu {
+  justify-self: end;
+  margin-right: 5px;
+  transform: scale(1.2);
+  color: gray;
+  padding: 5px;
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+.post-menu:hover {
+  background-color: whitesmoke;
+}
+
+.post .post-body {
+  overflow-wrap: anywhere;
+}
+
+.post-body {
+  padding: 0px 20px;
+  padding-bottom: 25px;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid lightgray;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
